@@ -1,0 +1,18 @@
+/* pages/orderdetail/orderdetail.less */
+.back {
+  width: 24rpx;
+  height: 24rpx;
+  position: fixed;
+  top: 70rpx;
+  left: 24rpx;
+}
+.title {
+  text-align: center;
+  background-color: #fff;
+  padding: 63rpx 0 43rpx 0;
+  margin-bottom: 20rpx;
+  font-size: 38rpx;
+  font-family: PingFang SC;
+  font-weight: 800;
+  color: #000000;
+}

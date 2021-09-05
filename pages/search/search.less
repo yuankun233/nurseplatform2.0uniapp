@@ -1,0 +1,212 @@
+/* pages/search/search.wxss */
+/* pages/home/home.wxss */
+page {
+ 
+}
+/* 绝对定位箭头的位置会受组件的影响，所以设置bottom */
+.back {
+  position: absolute;
+  width: 24rpx;
+  height: 40rpx;
+  top: 170rpx;
+  left: 30rpx;
+  z-index: 999;
+}
+.banner {
+  width: 750rpx;
+  	height: 343rpx;
+  position: fixed;
+  top: 0;
+  z-index: -9;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.realtit {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 63rpx;
+  z-index: 1;
+  font-size: 38rpx;
+  font-weight: 800;
+  font-family: PingFang SC;
+  color: #fff;
+}
+.tit {
+  z-index: 999;
+  font-size: 38rpx;
+  font-weight: 800;
+  font-family: PingFang SC;
+  color: #fff;
+}
+.top {
+  position: relative;
+  text-align: center;
+  position: fixed;
+  z-index: 99;
+}
+.nav {
+  position: fixed;
+  top: 160rpx;
+  left: 30rpx;
+}
+.nav .input {
+  position: relative;
+}
+.nav .input .search {
+  position: absolute;
+  left: 75rpx;
+  top: 15rpx;
+  height: 28rpx;
+  width: 28rpx;
+}
+.nav .input .searchbtn {
+  text-align: left;
+  position: absolute;
+  left: 52rpx;
+  padding-left: 68rpx !important;
+  width: 340rpx;
+  height: 58rpx;
+  background: #ffffff;
+  box-shadow: -1rpx 2rpx 9rpx 1rpx rgba(43, 90, 255, 0.1);
+  border-radius: 29rpx;
+  font-size: 28rpx;
+  line-height: 58rpx;
+  color: #a3a3a3;
+}
+.nav .servetime {
+  padding-left: 20rpx;
+  position: relative;
+  left: 444rpx;
+  width: 248rpx;
+  height: 58rpx;
+  background: #ffffff;
+  box-shadow: -1rpx 2rpx 9rpx 1rpx rgba(43, 90, 255, 0.1);
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  line-height: 58rpx;
+  color: #a3a3a3;
+}
+.nav .servetime .rili {
+  position: absolute;
+  left: 17rpx;
+  top: 15rpx;
+  height: 28rpx;
+  width: 28rpx;
+}
+.content {
+  margin: 240rpx 0 0 30rpx;
+  padding: 38rpx 38rpx 0;
+  width: 690rpx;
+  height: 82vh;
+  background: #ffffff;
+  border-radius: 12rpx;
+  .tit {
+    font-size: 32rpx;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 36rpx;
+  }
+  //   搜索历史列表
+  .historylist {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    .historyitem {
+      margin-right: 30rpx;
+      margin-bottom: 20rpx;
+      width: 154rpx;
+      height: 44rpx;
+      background: #eeeeee;
+      border-radius: 20rpx;
+
+      font-size: 22rpx;
+      line-height: 44rpx;
+      font-family: PingFang SC;
+      text-align: center;
+      color: #000000;
+    }
+  }
+}
+// 时间搜索
+.timesearch {
+  overflow: hidden;
+  margin: 240rpx 0 0 30rpx;
+  padding: 0 16rpx;
+  width: 690rpx;
+  height: 82vh;
+  background: #fcfcfc;
+  border-radius: 12rpx;
+  .tit {
+    margin: 34rpx 0;
+    text-align: center;
+    font-size: 30rpx;
+    font-family: PingFang SC;
+    color: #000000;
+  }
+  .wrapper {
+    width: 656rpx;
+    height: 481rpx;
+    background: #ffffff;
+    box-shadow: 0rpx 1rpx 17rpx 1rpx rgba(147, 147, 147, 0.14);
+    border-radius: 20rpx;
+  }
+  .calendarUtil {
+  }
+  .timeSelect {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .btn:nth-of-type(1) {
+      margin-right: 52rpx;
+    }
+    // 按钮激活样式
+    .btnActive {
+      background: #3488f8 !important;
+      color: #fff !important;
+      box-shadow: 0 10rpx 20rpx #3488f8 !important;
+      .time_dur {
+        color: #fff !important;
+      }
+    }
+
+    .btn {
+      text-align: center;
+      padding: 10rpx 0;
+      width: 300rpx;
+      height: 80rpx;
+      background: #fff;
+      box-shadow: 0px 1rpx 17rpx 1rpx rgba(147, 147, 147, 0.09);
+      border-radius: 20rpx;
+      margin-bottom: 37rpx;
+      font-size: 28rpx;
+      font-family: PingFang SC;
+      color: #000000;
+
+      .time_dur {
+        font-size: 21rpx;
+        font-family: DIN Light;
+        color: #878787;
+      }
+    }
+  }
+
+  // 确认取消按钮
+  .configAndCancel {
+    margin-top: 30rpx;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30rpx;
+    font-family: PingFang SC;
+    color: #808080;
+    view {
+      text-align: center;
+      width: 50%;
+    }
+    .config {
+      color: #3488f8;
+    }
+  }
+}

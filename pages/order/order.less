@@ -1,0 +1,190 @@
+/* pages/order/order.wxss */
+// tab栏
+.weui-tabs-bar__item {
+  width: 33.33%;
+  text-align: center;
+}
+.weui-tabs-bar__title {
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  padding-bottom: 14rpx;
+}
+
+.title {
+  text-align: center;
+  background-color: #fff;
+  padding: 63rpx 0 20rpx 0;
+  font-size: 38rpx;
+  font-family: PingFang SC;
+  font-weight: 800;
+  color: #000000;
+}
+// tab栏样式
+.van-tabs__wrap {
+  height: 66rpx !important;
+}
+
+// 标题默认样式
+.van-tab {
+  line-height: 66rpx !important;
+  color: #707070 !important;
+}
+// 去除顶部边框
+.van-hairline--top-bottom:after {
+  display: none;
+}
+// 标题激活样式
+.van-tab--active {
+  color: #3488f8 !important;
+}
+// 底部小条
+.van-tabs__line {
+  left: 15rpx !important;
+  width: 94rpx !important;
+  height: 4rpx !important;
+  background-color: #3488f8 !important;
+}
+
+// 待服务列表
+.item:first-child {
+  margin-top: unset;
+}
+.item {
+  position: relative;
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding: 20rpx 30rpx;
+
+  view.row-a1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    view.name {
+      font-size: 30rpx;
+      font-family: PingFang SC;
+      font-weight: bold;
+      color: #282f3a;
+    }
+
+    view.status {
+      font-size: 20rpx;
+      font-family: PingFang SC;
+      color: #666666;
+    }
+  }
+
+  view.row-a2 {
+    font-size: 20rpx;
+    font-family: PingFang SC;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    view.serve {
+    }
+
+    view.hcb {
+      margin-left: 65rpx;
+    }
+  }
+  // 图标
+  .icon {
+    width: 22rpx;
+    height: 22rpx;
+    margin-right: 8rpx;
+  }
+
+  view.row-a3 {
+    font-size: 20rpx;
+    view.text {
+      margin-top: 15rpx;
+      display: flex;
+      align-items: center;
+
+      img.time {
+      }
+
+      text {
+      }
+      .light {
+        color: #ff5543;
+      }
+    }
+  }
+  .btns {
+    position: absolute;
+    right: 30rpx;
+    top: 129rpx;
+    .flexbox {
+      display: flex;
+      flex-direction: column;
+      .van-button {
+        width: 140rpx !important;
+        height: 46rpx !important;
+        border-radius: 10rpx !important;
+        .van-button__text {
+          line-height: 46rpx !important;
+          font-size: 23rpx !important;
+          font-family: PingFang SC !important;
+        }
+      }
+      .calluser {
+        margin-bottom: 18rpx;
+        .van-button {
+          background: #ffffff !important;
+          border: 1rpx solid #b5b5b5 !important;
+          .van-button__text {
+            color: #888888 !important;
+          }
+        }
+      }
+      .go {
+        .van-button {
+          background: #3488f8 !important;
+          .van-button__text {
+            color: #fff !important;
+          }
+        }
+      }
+    }
+  }
+}
+// 待服务
+.content1{
+	// // 服务中录音按钮
+	// // uviewui按钮样式
+	//   .u-size-default {
+
+	//      width: 140rpx !important;
+	//       height: 46rpx !important;
+	//        border-radius: 10rpx !important;
+	//   }
+	//   // uviewui按钮字体样式
+	//   .u-size-default {
+	// 		line-height: 46rpx !important;
+	// 		font-size: 23rpx !important;
+	//         font-family: PingFang SC !important;
+	//   }
+	//   //
+	//   .calluser{}
+}
+.content2{
+	// 服务中录音按钮
+	// uviewui按钮样式
+	  .u-size-default {
+	    margin: 117rpx 0 0 245rpx;
+	    width: 200rpx;
+	    height: 58rpx;
+	    background: #3488f8;
+	    border-radius: 10rpx;
+	    
+	  }
+	  // uviewui按钮字体样式
+	  .u-size-default {
+	    font-size: 23rpx;
+	    font-family: PingFang SC;
+	    color: #ffffff;
+	  }
+	
+}
+
+

@@ -1,0 +1,118 @@
+{
+	"easycom": {
+		// 下载安装的方式需要前面的"@/"，npm安装的方式无需"@/"
+		// 下载安装方式
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+		// npm安装方式
+		// "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/home",
+			"style": {
+				"usingComponents": {},
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/order/order",
+			"style": {
+				// "usingComponents": {
+				// 	"order-message": "../../components/ordermessage/ordermessage",
+				// 	"order-list": "../../components/orderlist/orderlist"
+				// },
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"usingComponents": {},
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/orderdetail/orderdetail",
+			"style": {
+				"usingComponents": {},
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"usingComponents": {},
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/waitclose/waitclose",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/zgrz/zgrz",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/sfrz/sfrz",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/nurse_au/nurse_au",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/post_au/post_au",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}
+	],
+	"globalStyle": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"borderStyle": "white",
+		"color": "#8D8D8D",
+		"selectedColor": "#000000",
+		"backgroundColor": "#fff",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"text": "首页",
+				"iconPath": "/static/assets/home.png",
+				"selectedIconPath": "/static/assets/home-active.png"
+			},
+			{
+				"pagePath": "pages/order/order",
+				"text": "订单",
+				"iconPath": "/static/assets/order.png",
+				"selectedIconPath": "/static/assets/order-active.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "/static/assets/my.png",
+				"selectedIconPath": "/static/assets/my-active.png"
+			}
+		]
+	}
+}
