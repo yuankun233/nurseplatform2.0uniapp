@@ -126,15 +126,15 @@
 </script>
 <style lang="less">
 	@import "./home.less";
-	.container::after {
-		content: "";
-		position: fixed;
-		left: 0;
-		bottom: 0rpx;
-		width: 100%;
-		height: 90rpx;
-		z-index: 0;
-		box-shadow: 0px -2px 10px 0px rgba(38, 38, 38, 0.1);
-	}
+	// .container::after {
+	// 	content: "";
+	// 	position: fixed;
+	// 	left: 0;
+	// 	bottom: 0rpx;
+	// 	width: 100%;
+	// 	height: 90rpx;
+	// 	z-index: 0;
+	// 	box-shadow: 0px -2px 10px 0px rgba(38, 38, 38, 0.1);
+	// }
 	
 </style>

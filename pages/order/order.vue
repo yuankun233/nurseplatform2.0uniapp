@@ -175,6 +175,66 @@
 						msg: "需要带压脉带",
 						adress: "上海市浦东新区",
 						money: 450
+					},
+					{
+						title: "已服务",
+						status: false,
+						name: "董女士",
+						type: "上门服务",
+						hcb: false,
+						servedate: "6-15",
+						servetime: "10:00-16:00",
+						msg: "需要带压脉带",
+						adress: "上海市浦东新区",
+						money: 450
+					},
+					{
+						title: "已服务",
+						status: false,
+						name: "董女士",
+						type: "上门服务",
+						hcb: false,
+						servedate: "6-15",
+						servetime: "10:00-16:00",
+						msg: "需要带压脉带",
+						adress: "上海市浦东新区",
+						money: 450
+					},
+					{
+						title: "已服务",
+						status: false,
+						name: "董女士",
+						type: "上门服务",
+						hcb: false,
+						servedate: "6-15",
+						servetime: "10:00-16:00",
+						msg: "需要带压脉带",
+						adress: "上海市浦东新区",
+						money: 450
+					},
+					{
+						title: "已服务",
+						status: false,
+						name: "董女士",
+						type: "上门服务",
+						hcb: false,
+						servedate: "6-15",
+						servetime: "10:00-16:00",
+						msg: "需要带压脉带",
+						adress: "上海市浦东新区",
+						money: 450
+					},
+					{
+						title: "已服务",
+						status: false,
+						name: "董女士",
+						type: "上门服务",
+						hcb: false,
+						servedate: "6-15",
+						servetime: "10:00-16:00",
+						msg: "需要带压脉带",
+						adress: "上海市浦东新区",
+						money: 450
 					}
 				],
 				list: [{
@@ -269,18 +329,26 @@
 		overflow: hidden !important;
 	}
 
-	.container666 {}
+	.container666 {
+		background-color: #F1F1F1 !important;
+		height: 92.65vh;
+	}
+
+	uni-page-wrapper {}
 
 	// swiper组件有默认高度，超出高度会隐藏
 	uni-swiper {
-		height: 1046rpx;
-		width: 100%;
+		height: 85vh;
+		
 	}
 
 	// 内容区域
 	.swiper-div {
-		height: 1046rpx;
 		padding-top: 20rpx;
-		background-color: #F1F1F1;
+		height: 85vh;
+		overflow-y: auto;//高度与uni-swiper设一致，以便垂直滚动
+		padding-bottom: 98rpx;
 	}
+
+
 </style>
